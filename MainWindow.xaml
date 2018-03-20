@@ -1,36 +1,49 @@
-<Window x:Class="u1_03_JesseComputer.MainWindow"
+<Window x:Class="send_to_mcT.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:u1_03_JesseComputer"
+        xmlns:local="clr-namespace:send_to_mcT"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <StackPanel>
-        <Button x:Name="btnClickMe"
-               Click="btnClickMe_Click"
-                Content="Processor"/>
-        <Image Source="http://cdn.pcpartpicker.com/static/forever/images/product/78d5a83458df76aaff6112c60d482ff2.256p.jpg"
-               Visibility="Visible"
-               x:Name="Processor"
+        <Button x:Name="PROBTN"
+               Click="PROBTN_Click"
+                Content="Processor Model Pentum"/>
+        <Image x:Name="IMGPRO"
+            Source="http://cdn.pcpartpicker.com/static/forever/images/product/78d5a83458df76aaff6112c60d482ff2.256p.jpg" Height="150" Width="150"
+               Visibility="Collapsed"
                />
 
 
-        <Button x:Name="btnClickMe2"
-               Click="btnClickMe_Click"
-                Content="Motherboard"/>
-        <Image Source="http://www.tigerdirect.ca/applications/SearchTools/item-details.asp?EdpNo=10078229;
-"
-               Visibility="Visible"
-               />
+        <Button x:Name="MBBTN"
+               Click="MBBTN_Click"
+                Content="Motherboard Model ROG X370"/>
+        <Image x:Name="IMGMB" 
+            Source="https://www.asus.com/media/global/products/QwlTxpAeJ6tHHYFi/P_setting_000_1_90_end_500.png" Height="150" Width="150"
+               Visibility="Collapsed">
+        </Image>
 
-        <Button x:Name="btnClickMe3"
-               Click="btnClickMe_Click"
-                Content="CPU"/>
-        <Image Source="https://www.newegg.com/Product/Product.aspx?Item=N82E16820231588"
-               Visibility="Visible"
-               />
+
+        <Button x:Name="CPUBTN"
+               Click="CPUBTN_Click"
+                 Content="CPU Model TridentX"/>
+        <Image x:Name="IMGCPU"
+            Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPy5aUFG76_ppePjzGOy-8LlX1y59gHpCeF92snFWRvPS9lgGg" Height="200" Width="200"
+               Visibility="Collapsed">
+        </Image>
+
+        <Button x:Name="CBTN"
+                Click="CBTN_Click"
+                Content="Case Model Phanteks Enthoo Evolv"/>
+        <Image x:Name="Case"
+            Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR36cV7xX6JcazNZ9d78TXR5UQiyJg-bRXD9emTHXeoA37CXRrLHQ" Height="150" Width="150"
+Visibility="Collapsed">
+            </Image>
+            
 
 
     </StackPanel>
 </Window>
+
+    
