@@ -13,46 +13,46 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace u1_03_JesseComputer
+namespace send_to_mcT
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        public object Processor { get; private set; }
-
         public MainWindow()
         {
             InitializeComponent();
         }
 
-
-        private void BtnClickMe_Click(object sender, RoutedEventArgs e)
+        private void CPUBTN_Click(object sender, RoutedEventArgs e)
         {
-            Processor.Visibility = Visibility.Visible;
-        }
-        private void BtnClickMe2_Click(object sender, RoutedEventArgs e)
-        {
-            Content = "Motherboard";
+            IMGCPU.Visibility = Visibility.Visible;
+            IMGPRO.Visibility = Visibility.Collapsed;
+            IMGMB.Visibility = Visibility.Collapsed;    
 
         }
-        private void BtnClickMe3_Click(object sender, RoutedEventArgs e)
+
+        private void MBBTN_Click(object sender, RoutedEventArgs e)
         {
-            Content = "CPU";
+            IMGMB.Visibility = Visibility.Visible;
+            IMGPRO.Visibility = Visibility.Collapsed;
+            IMGCPU.Visibility = Visibility.Collapsed;
         }
-        private void BtnClickMe4_Click(object sender, RoutedEventArgs e)
+
+        private void PROBTN_Click(object sender, RoutedEventArgs e)
         {
-            Content = "Memory";
+            IMGPRO.Visibility = Visibility.Visible;
+            MBBTN.Visibility = Visibility.Visible;
+            IMGCPU.Visibility = Visibility.Collapsed;
         }
-        private void BtnClickMe5_Click(object sender, RoutedEventArgs e)
+
+        private void CBTN_Click(object sender, RoutedEventArgs e)
         {
-            Content = "Case";
-        }
-        private void BtnClickMe6_Click(object sender, RoutedEventArgs e)
-            {
-                Content = "UPS";
-            }
+            Case.Visibility = Visibility.Visible;
+            IMGCPU.Visibility = Visibility.Collapsed;
+            IMGPRO.Visibility = Visibility.Collapsed;
+            IMGMB.Visibility = Visibility.Collapsed;
         }
     }
- 
+}
